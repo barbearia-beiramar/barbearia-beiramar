@@ -270,6 +270,15 @@ i {
   line-height: 150%;
 }
 
+@media screen and (max-width: 778px) {
+  .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body {
   font-family: 'Sora', sans-serif;
   width: 100%;
