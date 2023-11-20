@@ -141,6 +141,74 @@ i {
   opacity: 0.9;
 }
 
+.hero {
+  color: #fefbff;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 14px;
+}
+
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 46px;
+}
+
+.hero p {
+  text-align: center;
+  margin: 14px 0;
+}
+
+.button-contact {
+  padding: 14px 28px;
+  color: #fefbff;
+  background-color: #d94140;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+.button-contact:hover {
+  -webkit-animation: scaleButton 0.8s alternate infinite;
+          animation: scaleButton 0.8s alternate infinite;
+}
+
+@-webkit-keyframes scaleButton {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+}
+
+@keyframes scaleButton {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+}
+
 body {
   font-family: 'Sora', sans-serif;
   width: 100%;
