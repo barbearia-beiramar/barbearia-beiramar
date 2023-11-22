@@ -206,3 +206,12 @@
   cursor: default;
 }
 
+@media screen and (max-width: 768px) {
+  .haircuts {
+    flex-direction: column;
+  }
+
+  .haircut img {
+    max-width: 740px;
+  }
+}
