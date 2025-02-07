@@ -1,3 +1,5 @@
+@use 'colors';
+
 header {
   width: 100%;
 }
@@ -9,7 +11,7 @@ header {
 }
 
 i {
-  color: $white-normal;
+  color: colors.$white-normal;
 }
 
 .header-icons {
@@ -20,7 +22,7 @@ i {
 
 .header-icons a:hover {
   i {
-    color: $red-light;
+    color: colors.$red-light;
     animation: translateY 0.5s infinite alternate;
   }
 }
@@ -35,16 +37,16 @@ i {
 }
 
 .header-button {
-  border: 1px solid $white-normal;
+  border: 1px solid colors.$white-normal;
   padding: 8px 24px;
-  color: $white-normal;
+  color: colors.$white-normal;
   background: transparent;
   transition: background-color 0.8s;
 }
 
 .header-button:hover {
-  border: 1px solid $red-light;
-  background-color: $red-light;
+  border: 1px solid colors.$red-light;
+  background-color: colors.$red-light;
 }
 
 .header-logo {

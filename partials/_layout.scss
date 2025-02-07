@@ -1,3 +1,5 @@
+@use 'colors';
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -6,14 +8,14 @@
 
 .bg-home {
   position: relative;
-
 }
 
 .bg-home::before {
   content: '';
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url('../assets/bg.svg');
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url('../assets/bg.jpg');
   left: 0;
   top: 0;
   width: 100%;
@@ -25,9 +27,8 @@
   opacity: 0.9;
 }
 
-
 .hero {
-  color: $white-normal;
+  color: colors.$white-normal;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -44,15 +45,13 @@
   p {
     text-align: center;
     margin: 14px 0;
-
   }
-
 }
 
 .button-contact {
   padding: 14px 28px;
-  color: $white-normal;
-  background-color: $red-normal;
+  color: colors.$white-normal;
+  background-color: colors.$red-normal;
   border: 0;
   font-size: 18px;
   font-weight: 600;
@@ -88,20 +87,19 @@
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
   }
 }
 
 .about {
-  background-color: $primary-normal;
+  background-color: colors.$primary-normal;
   overflow: hidden;
-  color: $white-normal;
+  color: colors.$white-normal;
 }
 
 .about-content {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,8 +133,8 @@
 }
 
 .services {
-  background-color: $white-normal;
-  color: $black-normal;
+  background-color: colors.$white-normal;
+  color: colors.$black-normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,17 +168,16 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: $white-normal;
+  background-color: colors.$white-normal;
   border-radius: 8px;
-  box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.5);
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 
   img {
     width: 100%;
     max-width: 354px;
-    transition: transform 0.2s ;
+    transition: transform 0.2s;
   }
-
 }
 
 .haircut img:hover {
@@ -192,14 +189,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding:  14px;
-  background-color: $white-normal;
+  padding: 14px;
+  background-color: colors.$white-normal;
   z-index: 99;
 }
 
 .haircut-info button {
-  color: $white-normal;
-  background-color: $red-normal;
+  color: colors.$white-normal;
+  background-color: colors.$red-normal;
   padding: 4px 8px;
   border-radius: 4px;
   border: 0;
@@ -221,15 +218,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 54px 0; 
+  padding: 54px 0;
   gap: 24px;
-  color: $white-normal;
+  color: colors.$white-normal;
 }
 
 .footer-icons {
   display: flex;
   gap: 8px;
-  color: $white-normal;
+  color: colors.$white-normal;
 }
 
 .btn-whatsapp {
@@ -238,9 +235,9 @@
   right: 24px;
   z-index: 99;
 
-  img{
+  img {
     max-width: 74px;
-    transition: transform .4s;
+    transition: transform 0.4s;
   }
 
   img:hover {
@@ -257,20 +254,20 @@
   padding: 6px;
   border-radius: 8px;
   text-align: center;
-  background-color: $black-normal;
-  color: $white-normal;
+  background-color: colors.$black-normal;
+  color: colors.$white-normal;
   opacity: 0;
   transition: opacity 0.4s;
 }
 
-.btn-whatsapp:hover .tooltip-text{
+.btn-whatsapp:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .btn-whatsapp {
-    img{
+    img {
       max-width: 64px;
     }
   }
