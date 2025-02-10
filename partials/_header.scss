@@ -17,7 +17,6 @@ i {
 .header-icons {
   display: flex;
   gap: 14px;
-
 }
 
 .header-icons a:hover {
@@ -49,15 +48,7 @@ i {
   background-color: colors.$red-light;
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 14px;
-}
-
 @media screen and (max-width: 768px) {
-
   .header-content {
     width: 100%;
     flex-direction: column;
@@ -77,5 +68,5 @@ i {
 
   .header-button {
     display: none;
-  } 
+  }
 }

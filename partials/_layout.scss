@@ -27,6 +27,14 @@
   opacity: 0.9;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  max-width: 200px;
+}
+
 .hero {
   color: colors.$white-normal;
   min-height: 80vh;
@@ -225,7 +233,7 @@
 
 .footer-icons {
   display: flex;
-  gap: 8px;
+  gap: 14px;
   color: colors.$white-normal;
 }
 

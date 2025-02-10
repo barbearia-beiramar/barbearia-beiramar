@@ -43,15 +43,6 @@ i {
   background-color: #e53959;
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 14px;
-  width:200px;
-  height:200px;
-}
-
 @media screen and (max-width: 768px) {
   .header-content {
     width: 100%;
@@ -95,6 +86,14 @@ i {
   background-repeat: no-repeat;
   background-position: 50% 0;
   opacity: 0.9;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  max-width: 200px;
 }
 
 .hero {
@@ -282,17 +281,8 @@ i {
 
 .footer-icons {
   display: flex;
-  gap: 8px;
+  gap: 14px;
   color: #fefbff;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 14px;
-  width:200px;
-  height:200px;
 }
 
 .btn-whatsapp {
